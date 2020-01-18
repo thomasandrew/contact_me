@@ -178,31 +178,31 @@ and (max-device-width : 667px) {
        max-width: 100%;
     }
     .contact {
-        position: relative;
+        position: fixed;
         right: 70px;
     }
 
     .me {
-        position: relative;
+        position: fixed;
         right: 74px;
         top: 127px;
     }
     
     #name {
-        position:relative;
+        position: fixed;
         width: 180px;;
         left: -385px;
     }
 
     #email {
-        position: relative;
+        position: fixed;
         right: 55px;
         width: 155px;
         bottom: 34px;
     }
 
     #msg {
-        position: relative;
+        position: fixed;
         left: -245px;
         width: 155px;
         height: 100px;
@@ -210,7 +210,7 @@ and (max-device-width : 667px) {
     }
 
     #btn {
-        position: relative;
+        position: fixed;
         top: 300px;
         left: 470px;
         width: 361px;
@@ -222,12 +222,12 @@ and (max-device-width : 667px) {
         height: 100%;
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        position: relative;
+        position: fixed;
     }
 
     .erro {
         border: 2px groove red;     
-        position: relative;
+        position: fixed;
         margin-top: 617px;
         margin-left: 0px;
         height: 46px;
@@ -248,13 +248,13 @@ and (max-device-width : 736px) {
     }
 
     .cont {
-        position: relative;
+        position: fixed;
         margin-top: 0%;
         margin-left: 273px;
     }
 
     #btn {
-        position: relative;
+        position: fixed;
         top: 300px;
         left: 491px;
         width: 361px;
@@ -262,7 +262,7 @@ and (max-device-width : 736px) {
 
     .erro {
         border: 2px groove red;     
-        position: relative;
+        position: fixed;
         margin-top: 686px;
         margin-left: 0px;
         height: 46px;
