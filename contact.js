@@ -1,48 +1,48 @@
-const nav = document.querySelector('.nav-menu');
-const close = document.querySelector('.close');
+const sidebar = document.getElementById('sidebar')
+const toggle_btn = document.querySelector('.toggle-btn')
 
-document.querySelector(".unicode").addEventListener('click', function () {
-   nav.style.display = 'flex';
-})
+toggle_btn.onclick = function() {
+   sidebar.classList.toggle('active')
+}
 
-close.onclick = () => {
-   nav.style.display = 'none';
-} 
+const name = document.getElementById('name')
+const email = document.getElementById('email')
+const mgs = document.getElementById('msg')
+const erro = document.querySelector('.erro')
+const btn = document.getElementById('btn')
 
-btn.onclick = function () {
-
-   const name = document.getElementById('name');
-   const email = document.getElementById('email');
-   const erro = document.querySelector('.erro');
-   const msg = document.getElementById('msg');
-   const btn = document.getElementById('btn');
-
+btn.addEventListener('click', () => {
    if (name.value === "") {
-      erro.style.display = 'block';
-      erro.innerHTML = "Name cannot be blank"
+      erro.innerHTML = "No name"
+      erro.style.color = 'red'
+      erro.style.display = 'flex'
       name.focus()
       return false
    } else {
-      erro.style.display = 'none';
+      erro.innerHTML = ""
+      erro.style.display = 'none'
    }
 
    if (email.value === "") {
+      erro.innerHTML = "No email"
       erro.style.display = 'flex'
-      erro.innerHTML = "Email cannot be blank"
+      erro.style.color = 'red'
       email.focus()
       return false
    } else {
+      erro.innerHTML = ""
       erro.style.display = 'none'
    }
 
    if (msg.value === "") {
+      erro.innerHTML = "No msg"
       erro.style.display = 'flex'
-      erro.innerHTML = "Please leave your message"
+      erro.style.coolor = 'red'
       msg.focus()
       return false
    } else {
+      erro.innerHTML = ""
       erro.style.display = 'none'
    }
 
-
-} 
+})
