@@ -1,9 +1,10 @@
 const sidebar = document.getElementById('sidebar')
 const toggle_btn = document.querySelector('.toggle-btn')
+const cont = document.querySelector('.cont')
 
 toggle_btn.onclick = function() {
-   sidebar.classList.toggle('active')
-}
+   sidebar.classList.toggle('active') 
+} 
 
 const name = document.getElementById('name')
 const email = document.getElementById('email')

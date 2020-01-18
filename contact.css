@@ -6,13 +6,13 @@
 }
 
 .main {
-    max-width: 100px;
+    max-width: 1080px;
 }
 
 #sidebar {
     position: fixed;
     width: 200px;
-    height: 625px;
+    height: 400px;
     background: #151719;
     left: -200px;
 }
@@ -58,11 +58,11 @@ a {
 section {
     width: 100%;
     height: 100%;
-    background: url(city5.jpg);
+    background: url('city5.jpg');
     background-size: 100%;
     background-repeat: no-repeat;
     background-attachment: fixed;
-    position: fixed;
+    position: absolute;
 }
 
 .overlay {
@@ -71,11 +71,12 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
-    background: rgb(0, 0,0,.9);    
+    background: rgb(0, 0,0,.9);
+    overflow: hidden;  
 }
 
 .text {
-    position: fixed;
+    position: absolute;
     color: white;
     left: 90%;
     top: 80px;
@@ -97,7 +98,7 @@ section {
 }
 
 .cont {
-    position: fixed;
+    position: absolute;
     margin-top: 0%;
     margin-left: 252px;
 } 
@@ -155,11 +156,11 @@ section {
 
 .erro {
     border: 2px groove red;     
-    position: fixed;
-    margin-top: 575px;
+    position: absolute;
+    margin-top: 574px;
     margin-left: 0px;
     height: 46px;
-    width: 1361px;
+    width: 1360px;
     background-color: #fff;
     display: none;
     text-align: center;
@@ -169,10 +170,27 @@ section {
 and (min-device-width : 375px) 
 and (max-device-width : 667px) {
 
-    body {
-       overflow-y: scroll;
-    }
     
+section {
+    width: 100%;
+    height: 100%;
+    background: url('city5.jpg');
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: absolute;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0,0,.9);
+    overflow: scroll;  
+}
+
    form {
        box-sizing: border-box;
        max-width: 100%;
@@ -189,20 +207,20 @@ and (max-device-width : 667px) {
     }
     
     #name {
-        position: fixed;
-        width: 180px;
+        position:relative;
+        width: 180px;;
         left: -385px;
     }
 
     #email {
-        position: fixed;
+        position: relative;
         right: 55px;
         width: 155px;
         bottom: 34px;
     }
 
     #msg {
-        position: fixed;
+        position: relative;
         left: -245px;
         width: 155px;
         height: 100px;
@@ -222,6 +240,7 @@ and (max-device-width : 667px) {
         height: 100%;
         background-size: 100% 100%;
         background-repeat: no-repeat;
+        background-attachment: fixed;
         position: fixed;
     }
 
@@ -242,11 +261,7 @@ and (max-device-width : 667px) {
 @media only screen 
 and (min-device-width : 414px) 
 and (max-device-width : 736px) {
-
-    body {
-        overflow-y: scroll;
-    }
-
+ 
     .cont {
         position: fixed;
         margin-top: 0%;
@@ -272,7 +287,6 @@ and (max-device-width : 736px) {
         text-align: center;
     }
 }
-
 
 
 
