@@ -178,12 +178,12 @@ and (max-device-width : 667px) {
        max-width: 100%;
     }
     .contact {
-        position: fixed;
+        position: relative;
         right: 70px;
     }
 
     .me {
-        position: fixed;
+        position: relative;
         right: 74px;
         top: 127px;
     }
@@ -210,7 +210,7 @@ and (max-device-width : 667px) {
     }
 
     #btn {
-        position: fixed;
+        position: relative;
         top: 300px;
         left: 470px;
         width: 361px;
@@ -222,13 +222,12 @@ and (max-device-width : 667px) {
         height: 100%;
         background-size: 100% 100%;
         background-repeat: no-repeat;
-        background-attachment: fixed;
-        position: fixed;
+        position: relative;
     }
 
     .erro {
         border: 2px groove red;     
-        position: fixed;
+        position: relative;
         margin-top: 617px;
         margin-left: 0px;
         height: 46px;
@@ -249,13 +248,13 @@ and (max-device-width : 736px) {
     }
 
     .cont {
-        position: fixed;
+        position: relative;
         margin-top: 0%;
         margin-left: 273px;
     }
 
     #btn {
-        position: fixed;
+        position: relative;
         top: 300px;
         left: 491px;
         width: 361px;
@@ -263,7 +262,7 @@ and (max-device-width : 736px) {
 
     .erro {
         border: 2px groove red;     
-        position: fixed;
+        position: relative;
         margin-top: 686px;
         margin-left: 0px;
         height: 46px;
